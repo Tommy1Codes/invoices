@@ -25,9 +25,9 @@ public class invoiceManager {
     private Payments pArr[] = new Payments[100];
     private int pArrCounter = 0;
     
-    private String studentsFileName  = "Students.txt";
-    private String sessionsFileName = "Sessions.txt";
-    private String paymentsFileName = "Payments.txt";
+    private String studentsFileName  = "Students.txt";  //StudentFile Format: <name>#<contact>
+    private String sessionsFileName = "Sessions.txt";    //SessionsFile Format : <name>#<hours>#<dateOf>
+    private String paymentsFileName = "Payments.txt";    //PaymentsFile Format : <name>#<amountPayed>#<dateOf>
     
     public invoiceManager() throws FileNotFoundException
     {
@@ -195,10 +195,3 @@ public class invoiceManager {
     }
 }
 
-//Sam#whatsapp
-
-//Sam#2#26/01
-
-//Sam#130
-
-//math problems - addition & multiplication
